@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jan Konings — Computer Engineering</title>
+  <meta name="description" content="Jan Konings, computer engineering student at Tufts. Projects in embedded systems, FPGA design, robotics, and software.">
+  <meta name="theme-color" content="#101412"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css"><script src="/data.js" defer></script><script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="nav-wrap"><nav class="nav container" aria-label="Main navigation">
+    <a class="identity" href="#"><span class="monogram">JK<span>·</span></span><span>Jan Konings</span></a>
+    <div class="nav-links"><a href="#projects">Selected work</a><a href="#cad">CAD</a><a href="#about">About</a><a href="/resume.html" target="_blank" rel="noopener">Résumé ↗</a></div>
+    <a class="nav-contact" href="mailto:jan.konings@tufts.edu">Let’s talk <span>↗</span></a>
+  </nav></header>
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING · TUFTS ’27</p>
+        <h1 id="hero-title">From the<br>signal to the<br><span class="accent">whole system.</span></h1>
+        <p class="hero-description">I’m Jan. I build hardware and software that work together — from custom circuit boards and wireless robots to processors and products on the web.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span>↓</span></a><a class="text-link" href="https://github.com/JanKonings" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+      <div class="hero-side">
+        <div class="architecture"><div class="panel-top"><span>PROJECT / 01</span><span class="mini-badge">VHDL</span></div>
+          <div class="architecture-title">Five stages.<br>One instruction pipeline.</div>
+          <div class="pipeline" aria-label="Processor pipeline: instruction fetch, decode, execute, memory, write back">
+            <div><b>IF</b><span>FETCH</span></div><i>→</i><div><b>ID</b><span>DECODE</span></div><i>→</i><div><b>EX</b><span>EXECUTE</span></div><i>→</i><div><b>MEM</b><span>MEMORY</span></div><i>→</i><div><b>WB</b><span>WRITE BACK</span></div>
+          </div>
+          <div class="feedback"><span>↳ Forwarding + hazard detection ↵</span></div>
+          <div class="architecture-footer"><span>LEGv8 / ARMv8 subset</span><button class="inline-button" data-open="processor">Explore project ↗</button></div>
+        </div>
+        <div class="hero-note"><span class="note-number">01—08</span><p>Eight projects.<br>Hardware, software, and mechanical design.</p></div>
+      </div>
+    </section>
+    <div class="disciplines"><div class="container"><span>EMBEDDED SYSTEMS</span><span class="separator">✳</span><span>DIGITAL DESIGN</span><span class="separator">✳</span><span>SOFTWARE</span><span class="separator">✳</span><span>ENTREPRENEURSHIP</span></div></div>
+    <section id="projects" class="section container" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">Built to do something.</h2></div><p>Real projects. Real implementation.<br>Open the details or go straight to the code.</p></div>
+      <div class="project-toolbar"><div class="filters" role="group" aria-label="Filter projects by discipline"><button class="filter active" data-filter="All" aria-pressed="true">All work <span id="all-project-count">8</span></button><button class="filter" data-filter="Embedded" aria-pressed="false">Embedded & robotics</button><button class="filter" data-filter="Digital" aria-pressed="false">FPGA & digital</button><button class="filter" data-filter="Software" aria-pressed="false">Software & web</button><button class="filter" data-filter="CAD" aria-pressed="false">CAD / 3D modeling</button></div><span id="project-count" class="count" aria-live="polite">8 projects</span></div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+    <section id="cad" class="cad-section" aria-labelledby="cad-title"><div class="container cad-layout">
+      <div><p class="eyebrow">02 / MECHANICAL DESIGN</p><h2 id="cad-title">CAD / 3D Modeling</h2><p class="cad-description">A LOOK Pivot binding, rebuilt from direct measurements in SolidWorks.</p><p class="muted">I took apart my own bindings to understand their components, measured them, and reconstructed the toe and heel assemblies.</p><button class="button cad-button" data-open="ski-binding">Explore the model and drawings</button></div>
+      <div class="cad-showcase"><figure><video controls playsinline preload="none" poster="/assets/ski-binding-poster.jpg" src="/assets/ski-binding-animation.mp4" aria-label="LOOK Pivot binding SolidWorks assembly animation">Your browser does not support video. <a href="/assets/ski-binding-animation.mp4">Download the animation</a>.</video><figcaption>LOOK Pivot binding · SolidWorks assembly animation</figcaption></figure><div class="cad-deliverables"><span>Toe + heel assemblies</span><span>Exploded drawing</span><span>34-item BOM</span></div><a class="cad-repo" href="https://github.com/JanKonings/Ski-Binding-3D-Model-Solidworks" target="_blank" rel="noopener">View SolidWorks files on GitHub</a></div>
+    </div></section>
+    <section class="explorer-section" id="explore" aria-labelledby="explore-title"><div class="container explorer">
+      <div><p class="eyebrow">03 / FIND THE RELEVANT WORK</p><h2 id="explore-title">What are you<br>looking for?</h2><p class="muted">Pick a focus, or search the skills in your role. See the projects that demonstrate them.</p><div class="focus-options"><button data-focus="STM32 ESP32 firmware C UART">Embedded firmware ↗</button><button data-focus="VHDL FPGA pipeline verification">Digital design ↗</button><button data-focus="C++ hash table algorithms">C++ software ↗</button><button data-focus="JavaScript HTML CSS e-commerce">Web development ↗</button><button data-focus="SolidWorks CAD 3D modeling assemblies">CAD / 3D modeling</button></div></div>
+      <div class="match-panel"><label for="skill-query">Skills or role keywords</label><form id="match-form"><input id="skill-query" maxlength="2000" placeholder="e.g. STM32, wireless, C++, FPGA" autocomplete="off"><button class="button primary" type="submit">Find projects ↗</button></form><p class="small muted">Matches documented tools and project descriptions.</p><div id="match-results" aria-live="polite"><p class="match-placeholder">Try a focus on the left to build a shortlist.</p></div></div>
+    </div></section>
+    <section id="about" class="section container about" aria-labelledby="about-title">
+      <div class="about-intro"><p class="eyebrow">04 / BEYOND THE BUILD</p><h2 id="about-title">Engineer.<br>Teacher.<br><span class="accent">Co-founder.</span></h2><p>I study computer engineering at Tufts University, with a minor in embedded systems. Alongside coursework and team projects, I teach embedded systems labs and co-founded Curation, a clothing brand where I built the e-commerce platform.</p><div class="education"><span>TUFTS UNIVERSITY</span><b>B.S. Computer Engineering</b><p>Embedded Systems minor · Class of 2027</p><div class="education-tags"><span>3.87 GPA</span><span>Dean’s List, all semesters*</span></div><small>*As reported in my supplied résumé.</small></div></div>
+      <div class="experience"><article><div class="experience-date">JUL 2024 — PRESENT</div><h3>Curation Brand</h3><p class="role">Co-founder / Technical Lead</p><p>Built the full e-commerce website and helped coordinate production, brand strategy, and community growth.</p><div class="business-stats"><div><strong>400+</strong><span>units sold</span></div><div><strong>$80K+</strong><span>revenue</span></div></div><a class="text-link" href="https://github.com/JanKonings/Curation1-Website-Final" target="_blank" rel="noopener">Explore the website code ↗</a></article><article><div class="experience-date">NOV 2025 — PRESENT</div><h3>Embedded Systems TA</h3><p class="role">Tufts University</p><p>Lead lab sections, create and grade homework and labs, and develop course content.</p></article><div class="skills-summary"><h3>Tools I work with</h3><div class="skill-group"><b>Hardware</b><p>STM32 · ESP32 · VHDL · FPGA · PCB design · UART · SPI · I²C · PWM</p></div><div class="skill-group"><b>Software</b><p>C · C++ · Python · JavaScript · HTML · CSS · Git · Linux</p></div><div class="skill-group"><b>CAD / 3D</b><p>SolidWorks · 3D modeling · Assemblies · Engineering drawings</p></div><div class="skill-group"><b>Development</b><p>PlatformIO · ESP-IDF · Lattice Radiant · GHDL · GTKWave · MATLAB · LTSpice</p></div></div></div>
+    </section>
+    <section class="contact container" id="contact"><p class="eyebrow">05 / LET’S CONNECT</p><h2>Have a system<br>worth building?</h2><a class="contact-email" href="mailto:jan.konings@tufts.edu">jan.konings@tufts.edu <span>↗</span></a><div class="contact-links"><a href="https://github.com/JanKonings" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/jan-konings-939190317/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="/resume.html" target="_blank" rel="noopener">View résumé ↗</a></div></section>
+  </main>
+  <footer class="container"><span>© <span id="year"></span> Jan Konings</span><span>Built across hardware & software.</span><a href="#">Back to top ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Close project details">×</button><div id="dialog-content"></div></dialog>
+</body></html>
